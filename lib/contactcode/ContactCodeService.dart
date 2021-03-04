@@ -14,6 +14,7 @@ Future<String> getContactCode() async {
   if(response.statusCode == 200) {
     return response.body;
   } else {
+    // error should be returned from the server and here you should parse it - similar comment should be added to method below
     return 'error';
   }
 }
