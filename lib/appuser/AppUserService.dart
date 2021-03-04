@@ -10,6 +10,7 @@ Future<bool> registerAppUser(String username, String password, String country) a
       },
       body: jsonEncode(<String, String> {
         'username': username,
+        // you should encrypt password before sending to the server - someone can get this kind of method and extract values
         'password': password,
         'country': country
       })
