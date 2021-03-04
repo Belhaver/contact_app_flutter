@@ -121,6 +121,7 @@ class ContactCodeState extends State<ContactCodePage> {
     );
   }
 
+  // consider making these methods private by adding _ at the start and add return type 
   createCodeAlertDialog(BuildContext context) async {
     String contactCode = await getContactCode();
 
